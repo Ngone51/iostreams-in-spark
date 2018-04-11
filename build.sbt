@@ -1,6 +1,14 @@
-name := "iostrems-in-spark"
 
-version := "0.1"
+name := "iostreams-in-spark"
 
-scalaVersion := "2.12.5"
+organization := "io.github"
+
+version := "1.0.4"
+
+scalaVersion := "2.11.8"
+
+libraryDependencies ++= Seq(
+  "com.google.guava" % "guava" % "14.0.1",
+  "junit" % "junit" % "4.12" % "test"
+)
         
