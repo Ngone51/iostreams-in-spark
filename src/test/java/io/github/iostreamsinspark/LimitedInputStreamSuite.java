@@ -55,12 +55,16 @@ public class LimitedInputStreamSuite {
         FileChannel channel = fis.getChannel();
         byte[] bytes = new byte[20];
         try {
+            Assert.assertEquals(0, channel.position());
             Assert.assertEquals(32, channel.size());
             // we try to read 20 bytes from lis, but due to a limit we set above,
             // we can only read 13 bytes at most.
             int l = lis.read(bytes, 0, 20);
+
             Assert.assertEquals(13, l);
+            Assert.assertEquals(l, channel.position());
             Assert.assertEquals("Hello, World.", new String(bytes, 0 , l));
+            
         } catch (ClosedChannelException cce) {
             System.err.println(channel.getClass() + "already closed.");
         } catch (IOException ioe) {
