@@ -1,5 +1,6 @@
-package io.github.iostreamsinspark;
+package io.github.iostreamsinspark.in;
 
+import io.github.iostreamsinspark.in.LimitedInputStream;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;

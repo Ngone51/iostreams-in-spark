@@ -33,7 +33,7 @@
  *    limitations under the License.
  */
 
-package io.github.iostreamsinspark;
+package io.github.iostreamsinspark.in;
 
 import java.io.FilterInputStream;
 import java.io.IOException;
