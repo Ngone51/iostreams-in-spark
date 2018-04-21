@@ -20,7 +20,7 @@ We added unit tests for each stream to show it's feature and usage.
 
     ByteBufferInputStream supports read data from a ByteBuffer and save it into a byte array.
     
-* [ByteBufferOutputStream](src/main/scala/io/github/iostreamsinspark/ouy/ByteBufferOutputStream.scala)
+* [ByteBufferOutputStream](src/main/scala/io/github/iostreamsinspark/out/ByteBufferOutputStream.scala)
 
     ByteBufferOutputStream supports read data from a byte array, and then convert into
     a ByteBuffer after close() called.
