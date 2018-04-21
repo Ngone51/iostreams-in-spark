@@ -8,19 +8,19 @@ We added unit tests for each stream to show it's feature and usage.
 
 ## streams collected yet
 
-* [LimitedInputStream](iostreams-in-spark/src/main/java/io/github/iostreamsinspark/in/LimitedInputStream.java)
+* [LimitedInputStream](src/main/java/io/github/iostreamsinspark/in/LimitedInputStream.java)
     
     A LimitedInputStream only allow to read a size limited data from a InputStream.
 
-* [TimeTrackingOutputStream](iostreams-in-spark/src/main/java/io/github/iostreamsinspark/out/TimeTrackingOutputStream.java)
+* [TimeTrackingOutputStream](src/main/java/io/github/iostreamsinspark/out/TimeTrackingOutputStream.java)
 
     A TimeTrackingOutputStream can track the time we spending on writing data to a OutputStream.
 
-* [ByteBufferInputStream](iostreams-in-spark/src/main/scala/io/github/iostreamsinspark/in/ByteBufferInputStream.scala)
+* [ByteBufferInputStream](src/main/scala/io/github/iostreamsinspark/in/ByteBufferInputStream.scala)
 
     ByteBufferInputStream supports read data from a ByteBuffer and save it into a byte array.
     
-* [ByteBufferOutputStream](iostreams-in-spark/src/main/scala/io/github/iostreamsinspark/ouy/ByteBufferOutputStream.scala)
+* [ByteBufferOutputStream](src/main/scala/io/github/iostreamsinspark/ouy/ByteBufferOutputStream.scala)
 
     ByteBufferOutputStream supports read data from a byte array, and then convert into
     a ByteBuffer after close() called.
